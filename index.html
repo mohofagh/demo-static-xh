@@ -3,24 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="application/javascript" src="bundle.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0FTFLTC4EJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-0FTFLTC4EJ');
+    </script>
 </head>
 <body>
-<!--    <h3>state: <span id="text"></span></h3>-->
-<div id="tracker">
-    <p id="video-status">Loading Video stream...</p>
-    <p id="tracker-status">Waiting for tracker...</p>
+
+<div class="topnav">
+<!--    <a class="active" href="#home">Home</a>-->
+<!--    <a href="#contact">Contact</a>-->
+    <a href="#about">About</a>
 </div>
-<hr>
-<br>
-<div class="container">
-    <div class="monitor">
-        <div class="monitorscreen">
-            <div id="scene"></div>
+
+<div style="padding-left:16px">
+    <h2>Some Title</h2>
+    <p>Sample content..</p>
+<!--    <p>Sample content.. We executed many people by firing squad without knowing if they were fully guilty. At times, the Revolution cannot stop to conduct much investigation; it has the obligation to triumph. — Ernesto Che Guevara</p>-->
+
+    <button id="init-button">START</button>
+    <div id="tracker">
+        <p id="video-status">waiting for video stream...</p>
+        <p id="tracker-status">Waiting for tracker...</p>
+    </div>
+    <hr>
+    <br>
+    <div class="container">
+        <div class="monitor">
+            <div class="monitorscreen">
+                <div id="scene"></div>
+            </div>
         </div>
     </div>
 </div>
 
-<p>Some descriptions...</p>
+
+
+
 </body>
 </html>
